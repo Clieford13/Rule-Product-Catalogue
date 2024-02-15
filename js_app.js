@@ -11,3 +11,5 @@ fetch('data.json')
       productItem.innerHTML = `
         <div class="card">
           <div class="card-body">
+          <h5 class="card-title">${product.Product_Name}</h5>
+          <p class="card-text">${product.Product_Description}</p>
