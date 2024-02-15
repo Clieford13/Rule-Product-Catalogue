@@ -28,3 +28,7 @@ fetch('data.json')
 
        // Define addToCart function globally
        function addToCart(productName) {
+        let clickCount = parseInt(document.getElementById(`clickCount${productName}`).innerText);
+  clickCount++;
+  document.getElementById(`clickCount${productName}`).innerText = clickCount;
+}
