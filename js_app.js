@@ -24,3 +24,7 @@ fetch('data.json')
            ListingElement.appendChild(productItem);
          });
        })
+       .catch(error => console.error('Error fetching data:', error));
+
+       // Define addToCart function globally
+       function addToCart(productName) {
