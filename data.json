@@ -1,0 +1,21 @@
+[
+    {
+        "Product_Name": "Cups Noodles",
+        "Product_Description": "Cups noddles good for hang over. ",
+        "Product_Price": 67.56,
+        "Product_DateAdded": "2024-02-06"
+    },
+    {
+        "Product_Name": "Bulalo",
+        "Product_Description": " Bulalo is made for beef and soap then sell in a cup.",
+        "Product_Price": 49.44,
+        "Product_DateAdded": "2024-04-07"
+    },
+    {
+        "Product_Name": "Ramen Noodles",
+        "Product_Description": " Ramen is also made for beef, ground beef with onion, diced tomatoes.",
+        "Product_Price": 149.49,
+        "Product_DateAdded": "2024-02-08"
+        
+    }
+]
