@@ -16,3 +16,7 @@ fetch('data.json')
                <p class="card-text">Price: $${product.Product_Price}</p>
                <p class="card-text">Date Added: ${product.Product_Date_Added}</p>
                <p class="card-text">Expiration Date: ${product.Product_Expiration_Date}</p>
+               <button class="btn btn-primary" id="addToCartBtn${product.Product_Name}" onclick="addToCart('${product.Product_Name}')">Add to Cart</button>
+               <span id="clickCount${product.Product_Name}">0</span> Clicks
+             </div>
+           </div>
