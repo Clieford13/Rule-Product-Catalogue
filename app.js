@@ -23,10 +23,9 @@ data.products.forEach(Product => {
     <button class="btn btn-primary add-to-cart" data-product="${Product.Product_Name}">Add to Cart</button>
   </div>
 `;
+
   ProductCardsContainer.appendChild(card);
 });
-
-
 
   // Event listener for Add to Cart buttons
   ProductCardsContainer.addEventListener("click", function(event) {
@@ -37,41 +36,48 @@ data.products.forEach(Product => {
           } else {
               Listing[ProductName] = 1;
           }
-          updateProductListDisplay();
+          updateListingDisplay();
         }
       });
 
-      // Function to update the ProductList display
-      function updateProductListDisplay() {
-          ProductListItemsContainer.innerHTML = "";
+      // Function to update the Listing display
+      function updateListingDisplay() {
+          ListingItemsContainer.innerHTML = "";
 
-        Object.keys(ProductList).forEach(ProductName => {
-          const quantity = ProductList[ProductName];
+        Object.keys(Listing).forEach(ProductName => {
+          const quantity = Listing[ProductName];
           const li = document.createElement("li");
           li.textContent = `${ProductName}: ${quantity}`;
-          ProductListItemsContainer.appendChild(li);
-      });
+          ListingItemsContainer.appendChild(li);
+  
+        });
     
-      // Update the count element to display the number of unique items in the ProductList
+      // Update the count element to display the number of unique items in the Listing
       document.getElementById('count').style.display = 'flex'; // Assuming you're using flexbox
-      document.getElementById('count').innerText = Object.keys(ProductList).length;
+      document.getElementById('count').innerText = Object.keys(Listing).length;
+  
     }
   })
+  
   .catch(error => {
       console.error("Error fetching products:", error);
     });
-         const ProductListLink = document.querySelector('.cart');
-         const ProductListItems = document.getElementById('cart-items');
+    
+         const ListingLink = document.querySelector('.cart');
+         const ListingItems = document.getElementById('cart-items');
   
          // Prevent default behavior on click
-      ProductListLink.addEventListener('click', function(event) {
-      event.preventDefault();
+  
+         ListingLink.addEventListener('click', function(event) {
+        event.preventDefault();
 
-      // Toggle display of ProductListItems
-      if (ProductListItems.style.display === 'none') {
-          ProductListItems.style.display = 'flex';
+      // Toggle display of ListingItems
+
+      if (ListingItems.style.display === 'none') {
+           ListingItems.style.display = 'flex';
       } else {
-          ProductListItems.style.display = 'none';
+           ListingItems.style.display = 'none';
       }
-  });
+ 
+    });
 });
