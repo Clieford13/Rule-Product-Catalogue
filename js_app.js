@@ -7,3 +7,7 @@ fetch('data.json')
       // Adding Bootstrap grid classes
       productItem.classList.add('col-md-4', 'mb-4'); 
       // Initialize click counter for each product
+      let clickCount = 0; 
+      productItem.innerHTML = `
+        <div class="card">
+          <div class="card-body">
