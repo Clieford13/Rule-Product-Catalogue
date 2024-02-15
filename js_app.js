@@ -20,3 +20,7 @@ fetch('data.json')
                <span id="clickCount${product.Product_Name}">0</span> Clicks
              </div>
            </div>
+           `;
+           ListingElement.appendChild(productItem);
+         });
+       })
