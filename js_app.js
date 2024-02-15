@@ -12,12 +12,12 @@ fetch('data.json')
            <img src="${product.Product_Image}" class="card-img-top" alt="${product.Product_Name}">
            <div class="card">
            <div class="card-body">
-           
+
                <h5 class="card-title">${product.Product_Name}</h5>
                <p class="card-text">${product.Product_Description}</p>
                <p class="card-text">Price: $${product.Product_Price}</p>
-               <p class="card-text">Date Added: ${product.Product_Date_Added}</p>
-               <p class="card-text">Expiration Date: ${product.Product_Expiration_Date}</p>
+               <p class="card-text">Date Added: ${product.Product_DateAdded}</p>
+               <p class="card-text">Expiration Date: ${product.Product_ExpirationDate}</p>
                <button class="btn btn-primary" id="addToCartBtn${product.Product_Name}" onclick="addToCart('${product.Product_Name}')">Add to Cart</button>
                <span id="clickCount${product.Product_Name}">0</span> Clicks
              </div>
@@ -32,5 +32,4 @@ fetch('data.json')
        function addToCart(productName) {
         let clickCount = parseInt(document.getElementById(`clickCount${productName}`).innerText);
   clickCount++;
-  document.getElementById(`clickCount${productName}`).innerText = clickCount;
-}
+  document.getElementById(`clickCount${productName}`).innerText = clickCount;  }
