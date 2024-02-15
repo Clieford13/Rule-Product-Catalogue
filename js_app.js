@@ -9,8 +9,10 @@ fetch('data.json')
       // Initialize click counter for each product
       let clickCount = 0; 
       productItem.innerHTML = `
+           <img src="${product.Product_Image}" class="card-img-top" alt="${product.Product_Name}">
            <div class="card">
            <div class="card-body">
+           
                <h5 class="card-title">${product.Product_Name}</h5>
                <p class="card-text">${product.Product_Description}</p>
                <p class="card-text">Price: $${product.Product_Price}</p>
