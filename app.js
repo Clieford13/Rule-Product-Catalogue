@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
     .then(response => response.json())
     .then(data => {
       const ProductCardsContainer = document.getElementById("product-cards");
-      const ProductListItemsContainer = document.getElementById("cart-items");
+      const ListingItemsContainer = document.getElementById("cart-items");
       const Listing = {}; // Object to store cart items and their quantities
 
 ProductCardsContainer.classList.add("card-group"); // Adding card-group class to ProductCardsContainer
