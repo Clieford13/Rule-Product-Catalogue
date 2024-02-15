@@ -1,0 +1,24 @@
+[
+    {
+      
+        "Product_Name": "Cups Noodles",
+        "Product_Description": "Single servings of the product are packaged in foam, plastic, or paper cups and are prepared by adding boiling water.",
+        "Product_Price": 67.56,
+        "Product_DateAdded": "2024-02-06",
+        "Product_Expiration_Date": "2025-02-06"
+    },
+    {
+        "Product_Name": "Pancit Canton LuckyMe ",
+        "Product_Description": "This delicious instant noodle dish is packed with bold and savory flavors, including chilimansi (a combination of chili and calamansi), garlic, and soy sauce.",
+        "Product_Price": 20.00,
+        "Product_DateAdded": "2024-04-07",
+        "Product_Expiration_Date": "2026-04-07"
+    },
+    {
+        "Product_Name": "Sardines",
+        "Product_Description":  "small, silvery, elongated fishes with a single short dorsal fin, no lateral line, and no scales on the head.",
+        "Product_Price": 25.00,
+        "Product_DateAdded": "2024-04-07",
+        "Product_Expiration_Date": "2027-04-07"
+    }
+]
